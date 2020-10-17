@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     String op, showv, reser;
 //Code
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button Buno, Bdos, Btres, Bcuatro, Bcinco, Bseis, Bsiete, Bocho, Bnueve, Bcero, Bpunto, Bmas, Bmenos, Bpor, Bdiv, Bigual, Bupdate;
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Bdiv = (Button) findViewById(R.id.Entre);
         Bupdate = (Button) findViewById(R.id.Actualizar);
         Bigual = (Button) findViewById(R.id.Igual);
+        Res=(TextView)findViewById(R.id.Vista);
         Buno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
