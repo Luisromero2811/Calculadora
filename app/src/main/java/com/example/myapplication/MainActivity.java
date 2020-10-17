@@ -8,7 +8,7 @@ public class MainActivity extends AppCompatActivity {
     TextView Res;
     double res;
     String op, showv, reser;
-//Code
+
     @Override
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
