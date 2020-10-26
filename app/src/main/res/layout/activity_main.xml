@@ -6,11 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+// Diseño de calculadora usando solamente LinearLayout
+    //Contenedor principal
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        //Contenedor de "display"
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -27,11 +29,13 @@
                 android:id="@+id/Vista">
             </TextView>
         </LinearLayout>
+        //Contenedor de botones
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
             android:orientation="horizontal">
+            //Contenedor de números y clear
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -183,6 +187,7 @@
                         android:id="@+id/Punto"></Button>
                 </LinearLayout>
             </LinearLayout>
+            //Contenedor de operadores básicos
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
