@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
+    //Variables globales
     TextView Res;
     double res;
     String op, showv, reser;
@@ -13,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Variables de tipo Button
         Button Buno, Bdos, Btres, Bcuatro, Bcinco, Bseis, Bsiete, Bocho, Bnueve, Bcero, Bpunto, Bmas, Bmenos, Bpor, Bdiv, Bigual, Bupdate;
+        //Instancia o ligado de la parte lógica con la parte visual
         Buno = (Button) findViewById(R.id.Uno);
         Bdos = (Button) findViewById(R.id.Dos);
         Btres = (Button) findViewById(R.id.Tres);
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Bupdate = (Button) findViewById(R.id.Actualizar);
         Bigual = (Button) findViewById(R.id.Igual);
         Res=(TextView)findViewById(R.id.Vista);
+        //Evento al momento de clickear algun boton
         Buno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
@@ -161,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 op = "";
             }
         });
+        //Evento que genera las operaciones
         Bigual.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 showv = Res.getText().toString();
